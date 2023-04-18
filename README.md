@@ -19,3 +19,4 @@ Images of the box art for the game and pokemon chosen will be displayed
 
 As of 4/17/2023 the buttons for Solo and Ironmon challenges have been created and their message have been displayed.
 the check box for Kaizo and the pictures will be added soonish
+At this time only pokemon generations 1 through 4 are covered.
