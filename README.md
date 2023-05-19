@@ -22,3 +22,4 @@ the check box for Kaizo and the pictures will be added soonish
 At this time only pokemon generations 1 through 4 are covered.
 
 as of 4/18/2023 the checkbox button has been added and the pokedexs for gens 1 through 4 have been completed. Also adjusted the placement of the labels and buttons
+as of 5/19/2023 the following files have been created for the main file to call. the imported files are Gen1_List, Gen2_List, Gen3_List, Gen4_List and Poke_Games_List.
