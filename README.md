@@ -23,3 +23,23 @@ At this time only pokemon generations 1 through 4 are covered.
 
 as of 4/18/2023 the checkbox button has been added and the pokedexs for gens 1 through 4 have been completed. Also adjusted the placement of the labels and buttons
 as of 5/19/2023 the following files have been created for the main file to call. the imported files are Gen1_List, Gen2_List, Gen3_List, Gen4_List and Poke_Games_List.
+
+As of 7/29/2023 the following changes have been made: 
+
+1. The following items have been replaced by Poke_Dex_list.py
+ > - Gen1_List.py
+> - Gen2_List.py
+> - Gen3_List.py
+> - Gen4_List.py
+
+2. temp_poke_choser.py has been replaced by Pokemon_Challenge_tabs.py
+3. Pokemon_Challenge_tabs.py has the following features
+> - There are 4 tabs
+> > - The 1st tab (Pick Your Solo Run) has 4 buttons for solo runs specifically for gens 1 through 4
+> > - When a Gen (Gens 1 through 4) button is clicked a new modal will be displayed that will let the user randomly choose a Pokémon from a specific game from that generation
+> > - The 2nd tab (Random Solo Challenge) has 1 button that opens a new modal for the Solo_challenge_generator.py
+> > - The 3rd tab (Pick Your Ironmon Challenge) has 4 buttons for ironmon challenges specifically for gens 1 through 4
+> > > - When a Gen (Gens 1 through 4) button is clicked a new modal will be displayed that will let the user randomly choose a Pokémon from a specific game from that generation
+4. The 2nd tab (Random Ironmon Challenge) has 1 button that opens a new modal for the Ironmon_challenge_generator.py
+5. All mentions of Kaizomon have been removed
+6. All random generator programs (any program that is called from the Pokemon_Challenge_tabs.py program) now display box art images of the Pokémon games and images of the Pokémons.
