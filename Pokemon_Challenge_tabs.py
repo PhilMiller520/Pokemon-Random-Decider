@@ -34,21 +34,21 @@ class PokemonChallengeTabs:
         self.root.mainloop()
 
     def create_pick_solo_game_section(self, frame):
-        label = tk.Label(frame, text="Pick the Generation you want to Solo Run", font=("Helvetica", 16))
+        label = tk.Label(frame, text="Pick the Generation you want to do a Solo Run in", font=("Helvetica", 16))
         label.place(x=225, y=20)
         
         # When clicked thses buttons will open a new window that will allow the user to choose what game they want to use for a solo challenge
-        gen1_button = tk.Button(frame, text="Gen 1", command=self.solo_gen1_selected)
-        gen1_button.place(x= 250, y=60)
+        solo_gen1_button = tk.Button(frame, text="Gen 1", command=self.solo_gen1_selected)
+        solo_gen1_button.place(x= 250, y=60)
 
-        gen2_button = tk.Button(frame, text="Gen 2", command=self.solo_gen2_selected)
-        gen2_button.place(x= 350, y=60)
+        solo_gen2_button = tk.Button(frame, text="Gen 2", command=self.solo_gen2_selected)
+        solo_gen2_button.place(x= 350, y=60)
 
-        gen3_button = tk.Button(frame, text="Gen 3", command=self.solo_gen3_selected)
-        gen3_button.place(x= 450, y=60)
+        solo_gen3_button = tk.Button(frame, text="Gen 3", command=self.solo_gen3_selected)
+        solo_gen3_button.place(x= 450, y=60)
 
-        gen4_button = tk.Button(frame, text="Gen 4", command=self.solo_gen4_selected)
-        gen4_button.place(x= 550, y=60)
+        solo_gen4_button = tk.Button(frame, text="Gen 4", command=self.solo_gen4_selected)
+        solo_gen4_button.place(x= 550, y=60)
 
     # when gen1_button is clicked the program for doing a pokemon Gen1 solo challenge will be opened
     def solo_gen1_selected(self): 
@@ -79,21 +79,22 @@ class PokemonChallengeTabs:
         open_random_solo_button.pack(pady=10)
 
     def create_pick_ironmon_challenge_section(self, frame):
-        label = tk.Label(frame, text="Pick the Generation you want to Solo Run", font=("Helvetica", 16))
-        label.place(x=225, y=20)
+        label = tk.Label(frame, text="Pick the Generation you want to do an Ironmon Challenge in",
+            font=("Helvetica", 16), wraplength=400)
+        label.place(x=230, y=20)
         
-        # When clicked thses buttons will open a new window that will allow the user to choose what game they want to use for a solo challenge
-        gen1_button = tk.Button(frame, text="Gen 1", command=self.ironmon_gen1_selected)
-        gen1_button.place(x= 250, y=60)
+        # When clicked thses buttons will open a new window that will allow the user to choose what game they want to use for a Ironmon challenge
+        Iron_gen1_button = tk.Button(frame, text="Gen 1", command=self.ironmon_gen1_selected)
+        Iron_gen1_button.place(x= 250, y=100)
 
-        gen2_button = tk.Button(frame, text="Gen 2", command=self.ironmon_gen2_selected)
-        gen2_button.place(x= 350, y=60)
+        Iron_gen2_button = tk.Button(frame, text="Gen 2", command=self.ironmon_gen2_selected)
+        Iron_gen2_button.place(x= 350, y=100)
 
-        gen3_button = tk.Button(frame, text="Gen 3", command=self.ironmon_gen3_selected)
-        gen3_button.place(x= 450, y=60)
+        Iron_gen3_button = tk.Button(frame, text="Gen 3", command=self.ironmon_gen3_selected)
+        Iron_gen3_button.place(x= 450, y=100)
 
-        gen4_button = tk.Button(frame, text="Gen 4", command=self.ironmon_gen4_selected)
-        gen4_button.place(x= 550, y=60)
+        Iron_gen4_button = tk.Button(frame, text="Gen 4", command=self.ironmon_gen4_selected)
+        Iron_gen4_button.place(x= 550, y=100)
 
     # when gen1_button is clicked the program for doing an Gen1 ironmon challenge will be opened
     def ironmon_gen1_selected(self): 
@@ -125,7 +126,6 @@ class PokemonChallengeTabs:
 
         open_Iromon_random_button = tk.Button(frame, text="Open Ironmon Challenge Generator", command=self.open_ironmon_challenge_generator)
         open_Iromon_random_button.pack(pady=10)
-
 
 if __name__ == "__main__":
     PokemonChallengeTabs()
